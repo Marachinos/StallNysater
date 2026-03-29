@@ -1,0 +1,50 @@
+﻿@page "/memorial/{categorySlug}/{horseSlug}"
+@using Microsoft.AspNetCore.Components
+@using StallNysater.Models
+@using StallNysater.Services
+@inject MemorialService MemorialService
+
+<PageTitle>Hästar vi minns</PageTitle>
+
+@if (horse is null)
+{
+    <div class="page-section">
+        <h3>Hästen hittades inte.</h3>
+        <a class="back-button" href="/memorial">← Tillbaka</a>
+    </div>
+}
+else
+{
+    <div class="horse-details-page">
+        <img src="@horse.ImageUrl" alt="@horse.Name" class="horse-details-image" />
+
+        <h1>@horse.Name</h1>
+
+        @if (!string.IsNullOrWhiteSpace(horse.BirthDate))
+        {
+            <p><strong>Född:</strong> @horse.BirthDate</p>
+        }
+
+        @if (!string.IsNullOrWhiteSpace(horse.Description))
+        {
+            <p>@horse.Description</p>
+        }
+
+        <a class="back-button" href="@($"/memorial/{categorySlug}")">← Tillbaka</a>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public string categorySlug { get; set; } = "";
+
+    [Parameter]
+    public string horseSlug { get; set; } = "";
+
+    private MemorialHorse? horse;
+
+    protected override void OnParametersSet()
+    {
+        horse = MemorialService.GetHorse(categorySlug, horseSlug);
+    }
+}

@@ -1,6 +1,33 @@
 ﻿@page "/memorial"
+@using StallNysater.Models
+@using StallNysater.Services
+@inject MemorialService MemorialService
+
+<PageTitle>Hästar vi minns</PageTitle>
 
 <div class="page-section">
     <h1>Hästar vi minns</h1>
-    <p>Här kan du samla minnessidor för tidigare hästar.</p>
+
+    <div class="horse-grid">
+        @foreach (var category in categories)
+        {
+            <a class="horse-card-link" href="@($"/memorial/{category.Slug}")">
+                <div class="horse-card">
+                    <img src="@category.ImageUrl" alt="@category.Name" class="horse-card-image" />
+                    <div class="horse-card-body">
+                        <h3>@category.Name</h3>
+                    </div>
+                </div>
+            </a>
+        }
+    </div>
 </div>
+
+@code {
+    private List<MemorialCategory> categories = [];
+
+    protected override void OnInitialized()
+    {
+        categories = MemorialService.GetCategories();
+    }
+}

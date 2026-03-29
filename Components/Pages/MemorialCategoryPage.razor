@@ -1,0 +1,47 @@
+﻿@page "/memorial/{categorySlug}"
+@using Microsoft.AspNetCore.Components
+@using StallNysater.Models
+@using StallNysater.Services
+@inject MemorialService MemorialService
+
+<PageTitle>Hästar vi minns</PageTitle>
+
+<div class="page-section">
+    <h1>@CategoryTitle</h1>
+
+    <div class="horse-grid">
+        @foreach (var horse in horses)
+        {
+            <a class="horse-card-link" href="@($"/memorial/{categorySlug}/{horse.Slug}")">
+                <div class="horse-card">
+                    <img src="@horse.ImageUrl" alt="@horse.Name" class="horse-card-image" />
+                    <div class="horse-card-body">
+                        <h3>@horse.Name</h3>
+                    </div>
+                </div>
+            </a>
+        }
+    </div>
+
+    <a class="back-button" href="/memorial">← Tillbaka till Hästar vi minns</a>
+</div>
+
+@code {
+    [Parameter]
+    public string categorySlug { get; set; } = "";
+
+    private List<MemorialHorse> horses = [];
+
+    private string CategoryTitle => categorySlug.ToLower() switch
+    {
+        "shettis" => "Shetlandsponny",
+        "russ" => "Gotlandsruss",
+        "varmblod" => "Varmblod",
+        _ => "Hästar vi minns"
+    };
+
+    protected override void OnParametersSet()
+    {
+        horses = MemorialService.GetHorsesByCategory(categorySlug);
+    }
+}

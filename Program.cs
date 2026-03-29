@@ -7,6 +7,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 builder.Services.AddSingleton<HorseService>();
+builder.Services.AddSingleton<MemorialService>();
 
 var app = builder.Build();
 
