@@ -12,6 +12,10 @@ html, body {
     font-family: 'Quicksand', Arial, sans-serif !important;
 }
 
+.multiline-text {
+    white-space: pre-line;
+}
+
 .site-wrapper {
     min-height: 100vh;
     background-color: #ae84d6;

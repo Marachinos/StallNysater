@@ -8,5 +8,6 @@ public class MemorialHorse
     public string CategorySlug { get; set; } = "";
     public string BirthDate { get; set; } = "";
     public string Description { get; set; } = "";
+    public string Resultat { get; set; } = "";
     public string ImageUrl { get; set; } = "";
 }

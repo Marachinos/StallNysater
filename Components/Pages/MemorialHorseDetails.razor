@@ -27,7 +27,13 @@ else
 
         @if (!string.IsNullOrWhiteSpace(horse.Description))
         {
-            <p>@horse.Description</p>
+            <p class="multiline-text">@horse.Description</p>
+        }
+
+        @if (!string.IsNullOrWhiteSpace(horse.Resultat))
+        {
+            <p><strong>Resultat:</strong></p>
+            <p class="multiline-text">@horse.Resultat</p>
         }
 
         <a class="back-button" href="@($"/memorial/{categorySlug}")">← Tillbaka</a>
