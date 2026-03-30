@@ -11,4 +11,7 @@ public class Horse
     public string OwnerTrainer { get; set; } = "";
     public string Description { get; set; } = "";
     public string ImageUrl { get; set; } = "";
+
+    public List<RaceResult> Results { get; set; } = [];
+    public HorseSummary? Summary { get; set; }
 }

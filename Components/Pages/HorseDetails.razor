@@ -28,6 +28,48 @@ else
             <p>@horse.Description</p>
         }
 
+        @if (horse.Summary is not null)
+        {
+            <h2>Tävlingsresultat:</h2>
+
+            <div class="results-summary">
+                <p>@horse.Summary.Starts</p>
+                <p>@horse.Summary.Earnings</p>
+                <p>@horse.Summary.Placings</p>
+                <p>@horse.Summary.Records</p>
+            </div>
+        }
+        @if (horse.Results.Any())
+        {
+            <div class="results-table-wrapper">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Datum</th>
+                            <th>Bana</th>
+                            <th>Placering</th>
+                            <th>Distans</th>
+                            <th>Tid</th>
+                            <th>Kusk</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var result in horse.Results)
+                        {
+                            <tr>
+                                <td>@result.Date</td>
+                                <td>@result.Track</td>
+                                <td>@result.Placement</td>
+                                <td>@result.Distance</td>
+                                <td>@result.Time</td>
+                                <td>@result.Driver</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+
         <a class="back-button" href="/horses">← Tillbaka till Våra Hästar</a>
     </div>
 }

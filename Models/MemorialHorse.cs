@@ -10,4 +10,7 @@ public class MemorialHorse
     public string Description { get; set; } = "";
     public string Resultat { get; set; } = "";
     public string ImageUrl { get; set; } = "";
+
+    public List<RaceResult> Results { get; set; } = [];
+    public HorseSummary? Summary { get; set; }
 }

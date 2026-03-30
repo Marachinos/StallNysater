@@ -16,7 +16,35 @@ public class HorseService
             Breeder = "Emiliano Stecca, Italien",
             OwnerTrainer = "Evelina Jonsson, Mantorp",
             Description = "Caracas är en av hästarna på Stall Nysäter.",
-            ImageUrl = "/images/horses/caracas/caracas01.jpg"
+            ImageUrl = "/images/horses/caracas/caracas01.jpg",
+            Summary = new HorseSummary
+            {
+                Starts = "47 starter",
+                Earnings = "131 800 kr",
+                Placings = "1-0-1",
+                Records = "16,6m 14,2ak 16,2am"
+            },
+            Results =
+            [
+                new RaceResult
+                {
+                    Date = "2024-05-12",
+                    Track = "Rättvik",
+                    Placement = "1",
+                    Distance = "1640m",
+                    Time = "1.16,4a",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2025-04-07",
+                    Track = "Mantorp",
+                    Placement = "3",
+                    Distance = "2140m",
+                    Time = "1.16,2a",
+                    Driver = "Kim Lagerhem"
+                }
+            ]
         },
         new Horse
         {
@@ -28,7 +56,19 @@ public class HorseService
             Breeder = "Wassberger Martina, Rimforsa",
             OwnerTrainer = "Evelina Jonsson, Mantorp",
             Description = "Helios är en lovande unghäst på Stall Nysäter.",
-            ImageUrl = "/images/horses/helios/helios01.jpg"
+            ImageUrl = "/images/horses/helios/helios01.jpg",
+            Results =
+            [
+                new RaceResult
+                {
+                    Date = "2025-06-19",
+                    Track = "Mantorp",
+                    Placement = "1p",
+                    Distance = "2140m",
+                    Time = "1.32,9",
+                    Driver = "Evelina Jonsson"
+                }
+            ]
         },
         new Horse
         {

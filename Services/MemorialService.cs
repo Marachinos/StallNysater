@@ -39,12 +39,14 @@ public class MemorialService
             "\nCapon var verkligen en bra 1:a ponny för Eve. Väldigt trevlig och snäll att köra. " +
             "\nExporterades till Finland i början mars 2009. Fick där ett föl." +
             "\nCapon lever tyvärr inte längre.",
-            Resultat = 
-            "39 starter" +
-            "\n1-1-3" +
-            "\n4 125 pp" +
-            "\n*3.00,6k 3.16,6ak",
-            ImageUrl = "/images/memorial/lilla-mysan.jpg"
+            ImageUrl = "/images/memorial/lilla-mysan.jpg",
+            Summary = new HorseSummary
+            {
+                Starts = "39 starter i Sverige",
+                Earnings = "4 125 pp",
+                Placings = "1-1-9",
+                Records = "*3.00,6k 3.16,6ak"
+            },
         },
          new MemorialHorse
         {
@@ -58,12 +60,14 @@ public class MemorialService
              "\nI början av hans karriär körde travskoleledaren Malin Lindström honom med bravur." +
              "\nNär han blev äldre och klokare så fick han fart på benen." +
              "\nFlyttade från oss i juni 2008. Exporterades till Danmark 2011.",
-            Resultat = 
-             "Starter i Norden: 94 starter" +
-             "\n12-10-16" +
-             "\n17 000 pp *6875" +
-             "\n2.35,3k 2.39,1ak",
-            ImageUrl = "/images/memorial/lilla-mysan.jpg"
+            ImageUrl = "/images/memorial/lilla-mysan.jpg",
+            Summary = new HorseSummary
+            {
+                Starts = "94 starter i Norden",
+                Earnings = "17000 pp",
+                Placings = "12-10-16",
+                Records = "2.35,3k 2.39,1ak"
+            },
         },
         new MemorialHorse
         {
@@ -75,12 +79,14 @@ public class MemorialService
             Description = "-Ior flyttade hit ifrån Gotland i april 2007. " +
             "\nHan blev den ponnyn som gav Eve sin 1:a seger (det var dessutom ett LILA täcke i vinst). " +
             "\nVann 3 av sina vinster med Eve i sulkyn. Han flyttade från oss i juli 2012.",
-            Resultat =
-             "65 starter" +
-            "\n5-6-7" +
-            "\n5600 pp" +
-            "2.51,0k 2.55,1ak",
-            ImageUrl = "/images/memorial/lilla-mysan.jpg"
+            ImageUrl = "/images/memorial/lilla-mysan.jpg",
+            Summary = new HorseSummary
+            {
+                Starts = "65 starter",
+                Earnings = "5600 pp",
+                Placings = "5-6-7",
+                Records = "2.51,0k 2.55,1ak"
+            },
         },
         new MemorialHorse
         {
@@ -94,12 +100,14 @@ public class MemorialService
             "\nMen det visade sig vara en lyckad tur. Bacardi vann överlägset och då ett nytt rekord. " +
             "\nLite kuriosa så var det sista loppet som prispengar delades ut till kat. A, efter det blev det prispoäng. " +
             "\nBacardi flyttade ifrån oss mars 2012, då han exporterades till Norge. Bacardi lever tyvärr inte längre.",
-            Resultat =
-            "Starter i Sverige: 47" +
-            "\n6-8-3" +
-            "\n7 050 pp" +
-            "\n2.42,8k *2.43,6ak",
-            ImageUrl = "/images/memorial/lilla-mysan.jpg"
+            ImageUrl = "/images/memorial/lilla-mysan.jpg",
+            Summary = new HorseSummary
+            {
+                Starts = "47 starter i Sverige",
+                Earnings = "7050 pp",
+                Placings = "6-8-3",
+                Records = "2.42,8k *2.43,6ak"
+            },
         },
         new MemorialHorse
         {
@@ -119,9 +127,35 @@ public class MemorialService
             CategorySlug = "varmblod",
             BirthDate = "2005",
             Description = "Stjärna var ett varmt och klokt varmblod som alltid kommer att minnas.",
-            ImageUrl = "/images/memorial/stjarna.jpg"
-        }
-    ];
+            ImageUrl = "/images/memorial/stjarna.jpg",
+            Summary = new HorseSummary
+        {
+            Starts = "46 starter",
+            Earnings = "130 300 kr",
+            Placings = "1-0-1",
+            Records = "16,6m - 14,2ak - 16,2am"
+        },
+        Results =
+        [
+            new RaceResult
+            {
+                Date = "2010-08-14",
+                Track = "Mantorp",
+                Placement = "1",
+                Distance = "2140 m",
+                Time = "1.16,0"
+            },
+            new RaceResult
+            {
+                Date = "2011-05-03",
+                Track = "Solvalla",
+                Placement = "2",
+                Distance = "1640 m",
+                Time = "1.14,5"
+            }
+        ]
+            }
+    ];  
 
     public List<MemorialCategory> GetCategories()
     {

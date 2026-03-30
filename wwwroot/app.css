@@ -142,6 +142,58 @@ body, p, h1, h2, h3, h4, h5, h6, a, button, input, textarea, select {
     background-color: #5f1891;
 }
 
+.results-summary {
+    max-width: 300px; /* 👈 gör rutan mindre */
+    margin: 1.5rem auto; /* 👈 centrerar */
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 16px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.results-summary p {
+    margin: 0.35rem 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #34134d;
+}
+.results-table-wrapper {
+    display: flex;
+    justify-content: center; /* 👈 centrerar tabellen */
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.results-table {
+    width: 100%;
+    max-width: 700px; /* 👈 så den inte blir för bred */
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.results-table th,
+.results-table td {
+    padding: 12px 14px;
+    text-align: center;
+    border-bottom: 1px solid rgba(77, 13, 115, 0.12);
+}
+
+.results-table th {
+    background-color: #d5c0e3;
+    color: #4a2561;
+    font-weight: 700;
+}
+
+.results-table td {
+    color: #34134d;
+}
+
+.results-table tr:last-child td {
+    border-bottom: none;
+}
+
 @media (max-width: 900px) {
     .page-content {
         padding: 1rem;

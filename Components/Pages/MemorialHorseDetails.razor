@@ -30,12 +30,45 @@ else
             <p class="multiline-text">@horse.Description</p>
         }
 
-        @if (!string.IsNullOrWhiteSpace(horse.Resultat))
+        @if (horse.Summary is not null)
         {
-            <p><strong>Resultat:</strong></p>
-            <p class="multiline-text">@horse.Resultat</p>
-        }
+            <h2>Tävlingsresultat</h2>
 
+            <div class="results-summary">
+                <p>@horse.Summary.Starts</p>
+                <p>@horse.Summary.Earnings</p>
+                <p>@horse.Summary.Placings</p>
+                <p>@horse.Summary.Records</p>
+            </div>
+        }
+        @if (horse.Results.Any())
+        {
+            <div class="results-table-wrapper">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Datum</th>
+                            <th>Bana</th>
+                            <th>Placering</th>
+                            <th>Distans</th>
+                            <th>Tid</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var result in horse.Results)
+                        {
+                            <tr>
+                                <td>@result.Date</td>
+                                <td>@result.Track</td>
+                                <td>@result.Placement</td>
+                                <td>@result.Distance</td>
+                                <td>@result.Time</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
         <a class="back-button" href="@($"/memorial/{categorySlug}")">← Tillbaka</a>
     </div>
 }
