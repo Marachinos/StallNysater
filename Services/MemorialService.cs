@@ -112,12 +112,52 @@ public class MemorialService
         new MemorialHorse
         {
             Id = 10,
+            Name = "Winner",
+            Slug = "winner",
+            CategorySlug = "russ",
+            BirthDate = "2010",
+            Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen.",
+            ImageUrl = "/images/history/winner01.jpg"
+        },
+         new MemorialHorse
+        {
+            Id = 11,
+            Name = "Valentino Rossi",
+            Slug = "goliat",
+            CategorySlug = "russ",
+            BirthDate = "2010",
+            Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen.",
+            ImageUrl = "/images/history/goliat01.jpg"
+        },
+         new MemorialHorse
+        {
+            Id = 12,
+            Name = "Te-Quila",
+            Slug = "tila",
+            CategorySlug = "russ",
+            BirthDate = "2010",
+            Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen.",
+            ImageUrl = "/images/history/winner01.jpg"
+        },
+        new MemorialHorse
+        {
+            Id = 13,
             Name = "Tip Top",
-            Slug = "tip-top",
+            Slug = "tippen",
             CategorySlug = "russ",
             BirthDate = "2010",
             Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen.",
             ImageUrl = "/images/history/tippen/tippen01.jpg"
+        },
+         new MemorialHorse
+        {
+            Id = 14,
+            Name = "Zitha",
+            Slug = "zitha",
+            CategorySlug = "russ",
+            BirthDate = "2010",
+            Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen.",
+            ImageUrl = "/images/history/zitha01.jpg"
         },
         new MemorialHorse
         {

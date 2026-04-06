@@ -57,12 +57,12 @@ else
                         @foreach (var result in horse.Results)
                         {
                             <tr>
-                                <td>@result.Date</td>
-                                <td>@result.Track</td>
-                                <td>@result.Placement</td>
-                                <td>@result.Distance</td>
-                                <td>@result.Time</td>
-                                <td>@result.Driver</td>
+                                <td data-label="Datum">@result.Date</td>
+                                <td data-label="Bana">@result.Track</td>
+                                <td data-label="Placering">@result.Placement</td>
+                                <td data-label="Distans">@result.Distance</td>
+                                <td data-label="Tid">@result.Time</td>
+                                <td data-label="Kusk">@result.Driver</td>
                             </tr>
                         }
                     </tbody>
