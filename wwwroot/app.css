@@ -143,12 +143,13 @@ body, p, h1, h2, h3, h4, h5, h6, a, button, input, textarea, select {
 }
 
 .results-summary {
-    max-width: 300px; /* 👈 gör rutan mindre */
-    margin: 1.5rem auto; /* 👈 centrerar */
-    background: rgba(255, 255, 255, 0.88);
+    max-width: 300px;
+    margin: 1.5rem auto;
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 16px;
-    padding: 0.5rem;
+    padding: 0.8rem;
     text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
 
 .results-summary p {
@@ -157,9 +158,10 @@ body, p, h1, h2, h3, h4, h5, h6, a, button, input, textarea, select {
     font-weight: 600;
     color: #34134d;
 }
+
 .results-table-wrapper {
     display: flex;
-    justify-content: center; /* 👈 centrerar tabellen */
+    justify-content: center;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
@@ -171,6 +173,15 @@ body, p, h1, h2, h3, h4, h5, h6, a, button, input, textarea, select {
     background: rgba(255, 255, 255, 0.88);
     border-radius: 16px;
     overflow: hidden;
+}
+
+.results-table-card {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
 
 .results-table th,

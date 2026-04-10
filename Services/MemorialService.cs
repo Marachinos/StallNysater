@@ -31,7 +31,7 @@ public class MemorialService
         new MemorialHorse
         {
             Id = 1,
-            Name = "Änglagårds Capones Girl",
+            Name = "Änglagårds Capones Girl (Ängl. Capones Girl)",
             Slug = "capon",
             CategorySlug = "shettis",
             BirthDate = "1996-05-28",
@@ -44,9 +44,57 @@ public class MemorialService
             {
                 Starts = "39 starter i Sverige",
                 Earnings = "4 125 pp",
-                Placings = "1-1-9",
+                Placings = "1-1-3",
                 Records = "*3.00,6k 3.16,6ak"
             },
+             Results =
+            [
+                new RaceResult
+                {
+                    Date = "2007-09-23",
+                    Track = "Mantorp",
+                    Placement = "3",
+                    Distance = "1180m",
+                    Time = "3.03,3",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2007-09-23",
+                    Track = "Mantorp",
+                    Placement = "1",
+                    Distance = "1700m",
+                    Time = "3.00,6",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2006-10-07",
+                    Track = "Eskilstuna",
+                    Placement = "3",
+                    Distance = "1640m",
+                    Time = "3.19,9",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2006-06-17",
+                    Track = "Östanåkra",
+                    Placement = "2",
+                    Distance = "1300m",
+                    Time = "3.19,4",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2006-06-11",
+                    Track = "Mantorp",
+                    Placement = "3",
+                    Distance = "1140m",
+                    Time = "3.13,9",
+                    Driver = "Evelina Jonsson"
+                }
+            ]
         },
          new MemorialHorse
         {
@@ -68,6 +116,90 @@ public class MemorialService
                 Placings = "12-10-16",
                 Records = "2.35,3k 2.39,1ak"
             },
+            Results =
+            [
+                new RaceResult
+                {
+                    Date = "2007-09-23",
+                    Track = "Mantorp",
+                    Placement = "3",
+                    Distance = "1140m",
+                    Time = "3.00,4",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2007-07-08",
+                    Track = "Axevalla",
+                    Placement = "3",
+                    Distance = "1640m",
+                    Time = "2,57,3",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2006-09-24",
+                    Track = "Mantorp",
+                    Placement = "2",
+                    Distance = "1160m",
+                    Time = "3.05,3g",
+                    Driver = "Malin Lindström"
+                },
+                new RaceResult
+                {
+                    Date = "2006-09-17",
+                    Track = "Axevalla",
+                    Placement = "1",
+                    Distance = "1140m",
+                    Time = "3.08,1a",
+                    Driver = "Malin Lindström"
+                },
+                new RaceResult
+                {
+                    Date = "2006-09-09",
+                    Track = "Färjestad",
+                    Placement = "3",
+                    Distance = "1180m",
+                    Time = "3.11,2",
+                    Driver = "Malin Lindström"
+                },
+                 new RaceResult
+                {
+                    Date = "2006-08-27",
+                    Track = "Färjestad",
+                    Placement = "3",
+                    Distance = "1180m",
+                    Time = "3.11,2",
+                    Driver = "Malin Lindström"
+                },
+                 new RaceResult
+                {
+                    Date = "2006-08-27",
+                    Track = "Mantorp",
+                    Placement = "1",
+                    Distance = "1140m",
+                    Time = "3.17,2",
+                    Driver = "Malin Lindström"
+                },
+                new RaceResult
+                {
+                    Date = "2006-08-19",
+                    Track = "Solvalla",
+                    Placement = "2",
+                    Distance = "1140m",
+                    Time = "3.12,9g",
+                    Driver = "Malin Lindström"
+                },
+                new RaceResult
+                {
+                    Date = "2006-08-13",
+                    Track = "Halmstad",
+                    Placement = "3",
+                    Distance = "1140m",
+                    Time = "3.18,3",
+                    Driver = "Malin Lindström"
+                }
+            ]
         },
         new MemorialHorse
         {
