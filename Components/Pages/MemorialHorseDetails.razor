@@ -27,7 +27,7 @@ else
 
         @if (!string.IsNullOrWhiteSpace(horse.Description))
         {
-            <p class="multiline-text">@horse.Description</p>
+            <p class="multiline-text">@((MarkupString)horse.Description)</p>
         }
 
         @if (horse.Summary is not null)

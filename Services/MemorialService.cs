@@ -54,7 +54,7 @@ public class MemorialService
                     Date = "2007-09-23",
                     Track = "Mantorp",
                     Placement = "3",
-                    Distance = "1180m",
+                    Distance = "1180",
                     Time = "3.03,3",
                     Driver = "Evelina Jonsson"
                 },
@@ -63,7 +63,7 @@ public class MemorialService
                     Date = "2007-09-23",
                     Track = "Mantorp",
                     Placement = "1",
-                    Distance = "1700m",
+                    Distance = "1700",
                     Time = "3.00,6",
                     Driver = "Evelina Jonsson"
                 },
@@ -72,7 +72,7 @@ public class MemorialService
                     Date = "2006-10-07",
                     Track = "Eskilstuna",
                     Placement = "3",
-                    Distance = "1640m",
+                    Distance = "1640",
                     Time = "3.19,9",
                     Driver = "Evelina Jonsson"
                 },
@@ -81,7 +81,7 @@ public class MemorialService
                     Date = "2006-06-17",
                     Track = "Östanåkra",
                     Placement = "2",
-                    Distance = "1300m",
+                    Distance = "1300",
                     Time = "3.19,4",
                     Driver = "Evelina Jonsson"
                 },
@@ -90,7 +90,7 @@ public class MemorialService
                     Date = "2006-06-11",
                     Track = "Mantorp",
                     Placement = "3",
-                    Distance = "1140m",
+                    Distance = "1140",
                     Time = "3.13,9",
                     Driver = "Evelina Jonsson"
                 }
@@ -123,7 +123,7 @@ public class MemorialService
                     Date = "2007-09-23",
                     Track = "Mantorp",
                     Placement = "3",
-                    Distance = "1140m",
+                    Distance = "1140",
                     Time = "3.00,4",
                     Driver = "Evelina Jonsson"
                 },
@@ -132,7 +132,7 @@ public class MemorialService
                     Date = "2007-07-08",
                     Track = "Axevalla",
                     Placement = "3",
-                    Distance = "1640m",
+                    Distance = "1640",
                     Time = "2,57,3",
                     Driver = "Evelina Jonsson"
                 },
@@ -141,7 +141,7 @@ public class MemorialService
                     Date = "2006-09-24",
                     Track = "Mantorp",
                     Placement = "2",
-                    Distance = "1160m",
+                    Distance = "1160",
                     Time = "3.05,3g",
                     Driver = "Malin Lindström"
                 },
@@ -150,7 +150,7 @@ public class MemorialService
                     Date = "2006-09-17",
                     Track = "Axevalla",
                     Placement = "1",
-                    Distance = "1140m",
+                    Distance = "1140",
                     Time = "3.08,1a",
                     Driver = "Malin Lindström"
                 },
@@ -159,7 +159,7 @@ public class MemorialService
                     Date = "2006-09-09",
                     Track = "Färjestad",
                     Placement = "3",
-                    Distance = "1180m",
+                    Distance = "1180",
                     Time = "3.11,2",
                     Driver = "Malin Lindström"
                 },
@@ -168,7 +168,7 @@ public class MemorialService
                     Date = "2006-08-27",
                     Track = "Färjestad",
                     Placement = "3",
-                    Distance = "1180m",
+                    Distance = "1180",
                     Time = "3.11,2",
                     Driver = "Malin Lindström"
                 },
@@ -177,7 +177,7 @@ public class MemorialService
                     Date = "2006-08-27",
                     Track = "Mantorp",
                     Placement = "1",
-                    Distance = "1140m",
+                    Distance = "1140",
                     Time = "3.17,2",
                     Driver = "Malin Lindström"
                 },
@@ -186,7 +186,7 @@ public class MemorialService
                     Date = "2006-08-19",
                     Track = "Solvalla",
                     Placement = "2",
-                    Distance = "1140m",
+                    Distance = "1140",
                     Time = "3.12,9g",
                     Driver = "Malin Lindström"
                 },
@@ -195,7 +195,7 @@ public class MemorialService
                     Date = "2006-08-13",
                     Track = "Halmstad",
                     Placement = "3",
-                    Distance = "1140m",
+                    Distance = "1140",
                     Time = "3.18,3",
                     Driver = "Malin Lindström"
                 }
@@ -210,7 +210,8 @@ public class MemorialService
             BirthDate = "2002-05-08",
             Description = "-Ior flyttade hit ifrån Gotland i april 2007. " +
             "\nHan blev den ponnyn som gav Eve sin 1:a seger (det var dessutom ett LILA täcke i vinst). " +
-            "\nVann 3 av sina vinster med Eve i sulkyn. Han flyttade från oss i juli 2012.",
+            "\nVann 3 av sina vinster med Eve i sulkyn. Han flyttade från oss i juli 2012." +
+            "\n<em>Resultatlistan nedan visar endast resultat i vår träning</em>",
             ImageUrl = "/images/memorial/lilla-mysan.jpg",
             Summary = new HorseSummary
             {
@@ -219,6 +220,145 @@ public class MemorialService
                 Placings = "5-6-7",
                 Records = "2.51,0k 2.55,1ak"
             },
+            Results =
+            [
+                new RaceResult
+                {
+                    Date = "2012-05-26",
+                    Track = "Mantorp",
+                    Placement = "2",
+                    Distance = "1200",
+                    Time = "2.55,1g",
+                    Driver = "Emilia Telhammar"
+                },
+                new RaceResult
+                {
+                    Date = "2012-05-26",
+                    Track = "Mantorp",
+                    Placement = "1",
+                    Distance = "1260",
+                    Time = "2.56,6",
+                    Driver = "Emilia Telhammar"
+                },
+                new RaceResult
+                {
+                    Date = "2011-11-13",
+                    Track = "Mantorp",
+                    Placement = "2",
+                    Distance = "1240",
+                    Time = "2.55,5",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2011-10-30",
+                    Track = "Solvalla",
+                    Placement = "3",
+                    Distance = "1660",
+                    Time = "itg",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2011-10-16",
+                    Track = "Axevalla",
+                    Placement = "3",
+                    Distance = "1220",
+                    Time = "2.55,0",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2011-09-10",
+                    Track = "Åby",
+                    Placement = "3",
+                    Distance = "1200",
+                    Time = "2.57,3g",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2011-08-27",
+                    Track = "Färjestad",
+                    Placement = "2",
+                    Distance = "1640",
+                    Time = "2.57,9g",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2011-08-07",
+                    Track = "Halmstad",
+                    Placement = "3",
+                    Distance = "1200n",
+                    Time = "3.00,3g",
+                    Driver = "Evelina Jonsson"
+                },
+                 new RaceResult
+                {
+                    Date = "2009-05-17",
+                    Track = "Mantorp",
+                    Placement = "2",
+                    Distance = "1180",
+                    Time = "2.59,1g",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2009-05-17",
+                    Track = "Mantorp",
+                    Placement = "1",
+                    Distance = "1640",
+                    Time = "2.55,7",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2007-07-28",
+                    Track = "Årjäng",
+                    Placement = "3",
+                    Distance = "1140",
+                    Time = "3.06,8",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2007-07-01",
+                    Track = "Mantorp",
+                    Placement = "1",
+                    Distance = "1140",
+                    Time = "3.01,7",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2007-06-10",
+                    Track = "Åby",
+                    Placement = "3",
+                    Distance = "1140",
+                    Time = "3.06,9g",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2007-06-10",
+                    Track = "Åby",
+                    Placement = "1",
+                    Distance = "1140",
+                    Time = "3.08,3",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2007-06-03",
+                    Track = "Mantorp",
+                    Placement = "2",
+                    Distance = "1140",
+                    Time = "3.04,1g",
+                    Driver = "Evelina Jonsson"
+                }
+            ]
+
         },
         new MemorialHorse
         {
@@ -229,7 +369,7 @@ public class MemorialService
             BirthDate = "2006-05-20",
             Description = "Bacardi flyttade till oss i augusti 2010. Var en ponny med mycket spring i benen, men kunde vara rädd för traktorer. " +
             "\nEtt lopp vi minns är 28/11-10, det var snöstorm men vi trotsade vädret och åkte till Örebro. " +
-            "\nMen det visade sig vara en lyckad tur. Bacardi vann överlägset och då ett nytt rekord. " +
+            "\nMen det visade sig vara en lyckad tur. Bacardi vann överlägset och då på ett nytt rekord. " +
             "\nLite kuriosa så var det sista loppet som prispengar delades ut till kat. A, efter det blev det prispoäng. " +
             "\nBacardi flyttade ifrån oss mars 2012, då han exporterades till Norge. Bacardi lever tyvärr inte längre.",
             ImageUrl = "/images/memorial/lilla-mysan.jpg",
@@ -240,6 +380,27 @@ public class MemorialService
                 Placings = "6-8-3",
                 Records = "2.42,8k *2.43,6ak"
             },
+            Results =
+            [
+                new RaceResult
+                {
+                    Date = "2007-09-23",
+                    Track = "Mantorp",
+                    Placement = "3",
+                    Distance = "1180",
+                    Time = "3.03,3",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2007-09-23",
+                    Track = "Mantorp",
+                    Placement = "1",
+                    Distance = "1700",
+                    Time = "3.00,6",
+                    Driver = "Evelina Jonsson"
+                }
+            ]
         },
         new MemorialHorse
         {
@@ -249,7 +410,35 @@ public class MemorialService
             CategorySlug = "russ",
             BirthDate = "2010",
             Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen.",
-            ImageUrl = "/images/history/winner01.jpg"
+            ImageUrl = "/images/history/winner01.jpg",
+            Summary = new HorseSummary
+            {
+                Starts = "47 starter i Sverige",
+                Earnings = "7050 pp",
+                Placings = "6-8-3",
+                Records = "2.42,8k *2.43,6ak"
+            },
+            Results =
+            [
+                new RaceResult
+                {
+                    Date = "2007-09-23",
+                    Track = "Mantorp",
+                    Placement = "3",
+                    Distance = "1180",
+                    Time = "3.03,3",
+                    Driver = "Evelina Jonsson"
+                },
+                new RaceResult
+                {
+                    Date = "2007-09-23",
+                    Track = "Mantorp",
+                    Placement = "1",
+                    Distance = "1700",
+                    Time = "3.00,6",
+                    Driver = "Evelina Jonsson"
+                }
+            ]
         },
          new MemorialHorse
         {
