@@ -8,6 +8,7 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddSingleton<HorseService>();
 builder.Services.AddSingleton<MemorialService>();
+builder.Services.AddSingleton<RememberedRaceService>();
 
 var app = builder.Build();
 

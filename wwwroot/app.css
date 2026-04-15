@@ -241,6 +241,71 @@ body, p, h1, h2, h3, h4, h5, h6, a, button, input, textarea, select {
     text-decoration: none;
 }
 
+.remembered-race-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 2rem auto 0 auto;
+}
+
+.remembered-race-card {
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 18px;
+    padding: 1.5rem 1.25rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .remembered-race-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+    }
+
+.remembered-race-card-body {
+    text-align: center;
+}
+
+    .remembered-race-card-body h3 {
+        margin: 0 0 0.75rem 0;
+        color: #34134d;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+.remembered-race-title {
+    margin-bottom: 1rem;
+    color: #4a2561;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.remembered-race-description {
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+    color: #34134d;
+}
+
+.race-link-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    background-color: #d5c0e3;
+    color: #4a2561;
+    border-radius: 16px;
+    padding: 10px 16px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+    .race-link-button:hover {
+        background-color: #4d0d73;
+        color: white;
+        text-decoration: none;
+    }
+
+
+
 @media (max-width: 900px) {
     .results-table-wrapper {
         display: block;

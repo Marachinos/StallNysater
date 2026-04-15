@@ -1,0 +1,39 @@
+﻿@page "/races-we-remember"
+@using StallNysater.Models
+@using StallNysater.Services
+@inject RememberedRaceService RememberedRaceService
+
+<PageTitle>Lopp vi minns</PageTitle>
+
+<div class="page-section">
+    <h1>Lopp vi minns</h1>
+
+    <div class="remembered-race-grid">
+        @foreach (var race in races)
+        {
+            <div class="remembered-race-card">
+                <div class="remembered-race-card-body">
+                    <h3>@race.HorseName</h3>
+                    <p class="remembered-race-title">@race.Title</p>
+                    <p class="remembered-race-description">@race.Description</p>
+
+                    <a class="race-link-button"
+                           href="@race.YouTubeUrl"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                        Se loppet på YouTube
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<RememberedRace> races = [];
+
+    protected override void OnInitialized()
+    {
+        races = RememberedRaceService.GetAll();
+    }
+}

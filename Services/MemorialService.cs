@@ -38,7 +38,8 @@ public class MemorialService
             Description = "- vår allra första shettis som, tillsammans med sin son Zingo, flyttade in hos oss augusti 2005." +
             "\nCapon var verkligen en bra 1:a ponny för Eve. Väldigt trevlig och snäll att köra. " +
             "\nExporterades till Finland i början mars 2009. Fick där ett föl." +
-            "\nCapon lever tyvärr inte längre.",
+            "\nCapon lever tyvärr inte längre."+
+            "\n<em>Resultatlistan nedan visar endast resultat i vår träning och endast Topp 3-placeringar.</em>",
             ImageUrl = "/images/memorial/lilla-mysan.jpg",
             Summary = new HorseSummary
             {
@@ -107,7 +108,8 @@ public class MemorialService
              "\nEn bestämd herre, som kunde vara väldigt bekväm när man körde honom." +
              "\nI början av hans karriär körde travskoleledaren Malin Lindström honom med bravur." +
              "\nNär han blev äldre och klokare så fick han fart på benen." +
-             "\nFlyttade från oss i juni 2008. Exporterades till Danmark 2011.",
+             "\nFlyttade från oss i juni 2008. Exporterades till Danmark 2011." +
+            "\n<em>Resultatlistan nedan visar endast resultat i vår träning och endast Topp 3-placeringar.</em>",
             ImageUrl = "/images/memorial/lilla-mysan.jpg",
             Summary = new HorseSummary
             {
@@ -211,7 +213,7 @@ public class MemorialService
             Description = "-Ior flyttade hit ifrån Gotland i april 2007. " +
             "\nHan blev den ponnyn som gav Eve sin 1:a seger (det var dessutom ett LILA täcke i vinst). " +
             "\nVann 3 av sina vinster med Eve i sulkyn. Han flyttade från oss i juli 2012." +
-            "\n<em>Resultatlistan nedan visar endast resultat i vår träning</em>",
+            "\n<em>Resultatlistan nedan visar endast resultat i vår träning och endast Topp 3-placeringar.</em>",
             ImageUrl = "/images/memorial/lilla-mysan.jpg",
             Summary = new HorseSummary
             {
@@ -371,7 +373,8 @@ public class MemorialService
             "\nEtt lopp vi minns är 28/11-10, det var snöstorm men vi trotsade vädret och åkte till Örebro. " +
             "\nMen det visade sig vara en lyckad tur. Bacardi vann överlägset och då på ett nytt rekord. " +
             "\nLite kuriosa så var det sista loppet som prispengar delades ut till kat. A, efter det blev det prispoäng. " +
-            "\nBacardi flyttade ifrån oss mars 2012, då han exporterades till Norge. Bacardi lever tyvärr inte längre.",
+            "\nBacardi flyttade ifrån oss mars 2012, då han exporterades till Norge. Bacardi lever tyvärr inte längre."+
+            "\n<em>Resultatlistan nedan visar endast resultat i vår träning och endast Topp 3-placeringar.</em>",
             ImageUrl = "/images/memorial/lilla-mysan.jpg",
             Summary = new HorseSummary
             {
@@ -409,7 +412,8 @@ public class MemorialService
             Slug = "winner",
             CategorySlug = "russ",
             BirthDate = "2010",
-            Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen.",
+            Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen."+
+            "\n<em>Resultatlistan nedan visar endast resultat i vår träning och endast Topp 3-placeringar.</em>",
             ImageUrl = "/images/history/winner01.jpg",
             Summary = new HorseSummary
             {
@@ -447,7 +451,8 @@ public class MemorialService
             Slug = "goliat",
             CategorySlug = "russ",
             BirthDate = "2010",
-            Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen.",
+            Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen."+
+            "\n<em>Resultatlistan nedan visar endast resultat i vår träning och endast Topp 3-placeringar.</em>",
             ImageUrl = "/images/history/goliat01.jpg"
         },
          new MemorialHorse
@@ -457,7 +462,8 @@ public class MemorialService
             Slug = "tila",
             CategorySlug = "russ",
             BirthDate = "2010",
-            Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen.",
+            Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen."+
+            "\n<em>Resultatlistan nedan visar endast resultat i vår träning och endast Topp 3-placeringar.</em>",
             ImageUrl = "/images/history/winner01.jpg"
         },
         new MemorialHorse
@@ -467,7 +473,8 @@ public class MemorialService
             Slug = "tippen",
             CategorySlug = "russ",
             BirthDate = "2010",
-            Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen.",
+            Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen."+
+            "\n<em>Resultatlistan nedan visar endast resultat i vår träning och endast Topp 3-placeringar.</em>",
             ImageUrl = "/images/history/tippen/tippen01.jpg"
         },
          new MemorialHorse
@@ -477,7 +484,8 @@ public class MemorialService
             Slug = "zitha",
             CategorySlug = "russ",
             BirthDate = "2010",
-            Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen.",
+            Description = "Tippen var ett tryggt gotlandsruss som betydde mycket för familjen."+
+            "\n<em>Resultatlistan nedan visar endast resultat i vår träning och endast Topp 3-placeringar.</em>",
             ImageUrl = "/images/history/zitha01.jpg"
         },
         new MemorialHorse
